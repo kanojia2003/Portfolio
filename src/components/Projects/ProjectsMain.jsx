@@ -8,7 +8,7 @@ const Projects = [
     projectName: "Chat App",
     description:
       "A responsive chat platform enabling live conversations with instant messages updates and image sharing.",
-    image: "../../public/images/ProjectOP.png",
+    image: "../../../public/images/ProjectOP.png",
     align: "right",
     date: "June 2025",
     link: "https://realtimechatapp-3-j211.onrender.com/",
