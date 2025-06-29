@@ -4,28 +4,28 @@ import { fadeIn } from "../../FrammerMotion/Varient.js";
 const educationData = [
   {
     degree: "B.Tech in Information Technology",
-    institution: "XYZ Institute of Technology",
+    institution: "St. John College of Engineering and Management",
     year: "2022 - 2026",
     details:
-      "Relevant Courses: Data Structures, Algorithms, Web Development, Machine Learning. CGPA: 8.7/10",
+      "Relevant Courses: Data Structures, Algorithms, Web Development, Machine Learning. CGPA: 8.23/10",
   },
   {
-    degree: "Senior Secondary (XII)",
-    institution: "ABC Public School",
-    year: "2021",
-    details: "PCM with Computer Science. Percentage: 92%",
+    degree: "Higher Secondary (XII)",
+    institution: "Pancham Jr. College of Arts Commerce and Science",
+    year: "2022",
+    details: "PCMB with Information Technology. Percentage: 80.30%",
   },
   {
     degree: "Secondary (X)",
-    institution: "ABC Public School",
-    year: "2019",
-    details: "Percentage: 94%",
+    institution: "Pancham English High School",
+    year: "2020",
+    details: "Percentage: 87.20%",
   },
 ];
 
 const EducationMain = () => {
   return (
-    <section id="education" className="py-20 px-4 mt-28">
+    <section id="education" className="py-12 px-4 mt-40 sm:[mt-]">
       <div className="max-w-[900px] mx-auto">
         <h2 className="text-6xl text-cyan mb-10 text-center font-normal">
           Education

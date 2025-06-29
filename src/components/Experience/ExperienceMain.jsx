@@ -4,34 +4,37 @@ import { MdWork } from "react-icons/md";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../FrammerMotion/Varient.js";
 
-/* ────────────────────────────────
-   Timeline data
-──────────────────────────────────*/
 const experienceData = [
   {
     role: "Frontend Developer Intern",
-    company: "Tech Solutions Pvt. Ltd.",
-    period: "June 2024 – Aug 2024",
+    company: "Bharat Intern",
+    period: "1-June-2024 to 30-June-2024",
     icon: <FaLaptopCode className="text-cyan text-3xl" />,
     description:
-      "Developed responsive UI components using React and Tailwind CSS. Collaborated with backend teams to integrate REST APIs and improved website performance by 30 %.",
+      "As a front-end intern at Bharat Intern, I was assigned real-world mini projects that involved building responsive websites using HTML, CSS, and JavaScript. The internship helped enhance my skills in layout design, styling, and DOM manipulation.",
+    certificate: "View certificate",
+    certificateLink:
+      "https://drive.google.com/file/d/1DQZV08HdbMTo5D3oQjlhzJNirXN3oujt/view?usp=sharing",
   },
   {
-    role: "Open Source Contributor",
-    company: "GitHub Projects",
-    period: "Jan 2024 – Present",
+    role: "Technical Support Engineer",
+    company: "HeartCounts",
+    period: "1-Dec-2023 to 31-Dec-2023",
     icon: <MdWork className="text-orange text-3xl" />,
     description:
-      "Contributed to multiple open‑source repositories, fixing bugs and adding features. Gained experience in code reviews, Git workflows, and collaborative development.",
+      "Worked as a Technical Support Engineer intern at HeartCounts for 1 month. My responsibilities included data entry, maintaining accurate records.",
+    certificate: "View certificate",
+    certificateLink:
+      "https://drive.google.com/file/d/1aO1gM9xmt2BBYhN3sy3YaSR2id3h8125/view?usp=sharing",
   },
-  {
-    role: "Web Developer (Freelance)",
-    company: "Freelance",
-    period: "2023",
-    icon: <FaBriefcase className="text-cyan text-3xl" />,
-    description:
-      "Built and deployed websites for small businesses, focusing on clean design, SEO, and mobile responsiveness. Managed client communication and project timelines.",
-  },
+  // {
+  //   role: "Web Developer (Freelance)",
+  //   company: "Freelance",
+  //   period: "2023",
+  //   icon: <FaBriefcase className="text-cyan text-3xl" />,
+  //   description:
+  //     "Built and deployed websites for small businesses, focusing on clean design, SEO, and mobile responsiveness. Managed client communication and project timelines.",
+  // },
 ];
 
 /* ────────────────────────────────
@@ -130,6 +133,14 @@ const ExperienceMain = () => {
                   </span>
                 </div>
                 <p className="text-lightGrey mt-4">{exp.description}</p>
+                <a
+                  href={exp.certificateLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cyan hover:text-orange underline mt-4 transition-colors duration-200 w-fit"
+                >
+                  {exp.certificate}
+                </a>
               </motion.div>
             </motion.div>
           ))}
