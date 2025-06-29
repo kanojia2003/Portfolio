@@ -1,6 +1,6 @@
 import React from "react";
 
-const navbarLogo = () => {
+const NavbarLogo = () => {
   return (
     <div>
       <h1 className="text-white text-2xl sm:hidden md:block">
@@ -13,4 +13,4 @@ const navbarLogo = () => {
   );
 };
 
-export default navbarLogo;
+export default NavbarLogo;
