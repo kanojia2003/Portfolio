@@ -69,10 +69,10 @@ const ContactMe = () => {
         <div className="mt-10 flex flex-col items-center gap-2 text-lightGrey text-sm">
           <span>or email me at</span>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:neerajkanojia99@gmail.com"
             className="text-cyan hover:text-orange transition-all duration-300 underline"
           >
-            your.email@example.com
+            neerajkanojia99@gmail.com
           </a>
         </div>
       </div>

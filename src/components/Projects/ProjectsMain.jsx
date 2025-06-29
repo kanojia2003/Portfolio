@@ -3,12 +3,14 @@ import ProjectText from "./ProjectText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../FrammerMotion/Varient.js";
+import projectop from "../../../dist/images/ProjectOP.png";
+
 const Projects = [
   {
     projectName: "Chat App",
     description:
       "A responsive chat platform enabling live conversations with instant messages updates and image sharing.",
-    image: "../../../public/images/ProjectOP.png",
+    image: projectop,
     align: "right",
     date: "June 2025",
     link: "https://realtimechatapp-3-j211.onrender.com/",
