@@ -5,7 +5,7 @@ import NavbarLinks from "./navbarLinks";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
 
-const navbarMain = () => {
+const NavbarMain = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -34,4 +34,4 @@ const navbarMain = () => {
   );
 };
 
-export default navbarMain;
+export default NavbarMain;

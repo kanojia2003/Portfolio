@@ -1,5 +1,5 @@
 import "./App.css";
-import NavbarMain from "./components/navbar/navbarMain.jsx";
+import NavbarMain from "./components/navbar/NavbarMain.jsx";
 import HeroMain from "./components/HeroSection/HeroMain.jsx";
 import HeroGradient from "./components/HeroSection/HeroGradient.jsx";
 import AboutMeMain from "./components/AboutMe/AboutMeMain.jsx";
@@ -21,7 +21,8 @@ function App() {
       <EducationMain />
       <ExperienceMain />
       {/* <HelperSec /> */}
-      <ProjectsMain /> <ContactMe />
+      <ProjectsMain />
+      <ContactMe />
       <FooterMain />
     </main>
   );
