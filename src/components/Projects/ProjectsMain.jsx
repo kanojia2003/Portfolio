@@ -3,7 +3,7 @@ import ProjectText from "./ProjectText";
 import SingleProject from "./SingleProject";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../FrammerMotion/Varient.js";
-import projectop from "../../../dist/images/ProjectOP.png";
+import projectop from "../../../public/images/projectop.png";
 
 const Projects = [
   {
