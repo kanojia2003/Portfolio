@@ -4,6 +4,7 @@ import NavbarLogo from "./NavbarLogo";
 import NavbarLinks from "./NavbarLinks";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { useState } from "react";
+import { Link } from "react-scroll"; // Import Link for smooth scrolling
 
 const NavbarMain = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +19,17 @@ const NavbarMain = () => {
         <div className={`${menuOpen ? "sm:block" : "sm:hidden"} lg:block`}>
           <NavbarLinks />
         </div>
-        <NavbarBtn />
+        {/* Wrap NavbarBtn with Link to scroll to contact section */}
+        <Link
+          spy={true}
+          smooth={true}
+          duration={500}
+          offset={-120} // Adjust offset if needed
+          to="contact" // Link to the contact section
+          className="cursor-pointer" // Add cursor pointer for better UX
+        >
+          <NavbarBtn />
+        </Link>
       </div>
 
       <div className="flex lg:hidden sm:block p-6 bg-black items-center justify-center rounded-full border-[0.5px] border-orange-500">
