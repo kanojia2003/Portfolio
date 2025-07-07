@@ -1,35 +1,32 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { fadeIn } from "../../FrammerMotion/Varient.js";
-import { FaRegCircle } from "react-icons/fa6";
-import MyPhoto from "/public/images/Pics.png";
-import { PiHexagonThin } from "react-icons/pi";
-const HeroPic = () => (
-  <motion.div
-    variants={fadeIn("left", 0.2)}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: false, amount: 0 }}
-    // className="
-    //   hidden md:flex
-    //   relative
-    //   items-end md:items-center justify-center
-    //   w-full md:max-w-[40%]
-    // "
+import { fadeIn } from "../../FrammerMotion/Varient";
 
-    className=" h-full flex items-center justify-center "
-  >
-    <img src={MyPhoto} alt="Neeraj Kanojia" className="max-h-[450px] w-auto" />
-
-    <div
-      className="absolute
-    md:h-[450px] lg:h-[550px] w-auto     /* never taller than section */
-    text-cyan blur-md
-    animate-[spin_20s_linear_infinite] "
+const HeroPic = () => {
+  return (
+    <motion.div
+      variants={fadeIn("left", 0.3)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="mt-0 relative w-[300px] h-[300px] md:w-[350px] md:h-[350px] rounded-full overflow-hidden border-4 border-orange-500 shadow-lg backdrop-blur-sm bg-white/10 dark:bg-white/5"
     >
-      <PiHexagonThin className=" md:h-[90%] sm:h-[120%] min-h-[600px] w-auto text-cyan blur-md animate-[spin_20s_linear_infinite] " />
-    </div>
-  </motion.div>
-);
+
+ 
+
+
+      {/* Profile Image */}
+      <img
+        src="/images/Pics.png"
+        alt="Neeraj Kanojia"
+        className="w-full h-full object-cover rounded-full hover:scale-105 transition-transform duration-500 ease-in-out"
+      />
+
+      {/* Glowing Gradient (responsive and dark-mode ready) */}
+      <div className="absolute -inset-1 rounded-full z-[-1] bg-gradient-to-tr from-orange-400 to-cyan-400 blur-2xl opacity-40 dark:from-orange-500 dark:to-cyan-500" />
+
+    </motion.div>
+  );
+};
 
 export default HeroPic;

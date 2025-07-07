@@ -8,10 +8,25 @@ const ContactMe = () => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Integrate with emailjs or backend here if needed
-    setSubmitted(true);
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbwaeavgWoQkATJZUJDL3WRysOM5exxi7kfc37K5KLdLeg3zQ_tkIwpqc1faWaMWkS-0/exec",
+        {
+          method: "POST",
+          mode: "no-cors", // Google Apps Script requires no-cors for public POST
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(form),
+        }
+      );
+      setSubmitted(true);
+      setForm({ name: "", email: "", message: "" }); // Reset form after submit
+    } catch (err) {
+      alert("There was an error submitting the form.");
+    }
   };
 
   return (

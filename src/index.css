@@ -9,3 +9,58 @@ body {
   overflow-x: hidden;
   /* Prevent horizontal scroll */
 }
+
+
+
+@layer utilities {
+
+  /* Animated gradient background shift */
+  @keyframes gradientShift {
+
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient-slow {
+    animation: gradientShift 12s ease-in-out infinite;
+    background-size: 200% 200%;
+  }
+
+  /* Floating (vertical drift) */
+  @keyframes floatSlow {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float-slow {
+    animation: floatSlow 5s ease-in-out infinite;
+  }
+
+  /* Slow 360° rotation */
+  @keyframes rotateSlow {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-rotate-slow {
+    animation: rotateSlow 20s linear infinite;
+  }
+}
